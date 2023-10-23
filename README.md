@@ -1,6 +1,6 @@
 # Webpack 5 config for React
 
-A detailed guide for setting up this config you can find in my article on Habr: https://habr.com/ru/post/597389/
+A detailed guide for setting up this config you can find article about this config on Habr: https://habr.com/ru/post/597389/
 
 # Getting Started
 
