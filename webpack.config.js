@@ -12,7 +12,7 @@ if (process.env.NODE_ENV === 'production') {
 
 const plugins = [
   new MiniCssExtractPlugin({
-    filename: '[name].[contenthash].css',
+    filename: '[name].[content hash].css',
   }),
   new HtmlWebpackPlugin({
     template: './src/index.html',
@@ -35,11 +35,11 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, './dist'),
+    filename: "bundle.js",
     assetModuleFilename: 'assets/[hash][ext][query]',
     clean: true,
   },
-
   module: {
     rules: [
       { test: /\.(html)$/, use: ['html-loader'] },
@@ -61,11 +61,12 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.jsx?$/,
+        test: /\.(js|mjs|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
+            presets: ['@babel/preset-env','@babel/preset-react'],
             cacheDirectory: true,
           },
         },

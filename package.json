@@ -7,6 +7,7 @@
     "start": "cross-env SERVE=true webpack serve",
     "build": "webpack",
     "build-prod": "webpack --mode=production",
+    "show-build": "serve -s build -p 5000",
     "clean": "rd /s /q dist"
   },
   "repository": {
@@ -18,7 +19,7 @@
     "Webpack",
     "Node"
   ],
-  "author": "aleksandr <aleksandr.orlov.dev@gmail.com>",
+  "author": "GDY",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aAleksandrOrlov/webpack-5-config/issues"
@@ -47,6 +48,8 @@
   },
   "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-router": "^6.17.0",
+    "react-router-dom": "^6.17.0"
   }
 }

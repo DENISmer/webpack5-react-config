@@ -1,0 +1,8 @@
+$gradient = linearGradient(#fff,#ccc)
+div {
+  button {
+    border-radius: 3px;
+    padding: 3px;
+    background-color: $gradient;
+  }
+}
