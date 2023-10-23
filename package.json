@@ -8,7 +8,7 @@
     "build": "webpack",
     "build-prod": "webpack --mode=production",
     "deploy" : "gh-pages -d build",
-    "clean": "rd /s /q dist"
+    "clean": "rd /s /q build"
   },
   "repository": {
     "type": "git",
