@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwebpack_5_react=self.webpackChunkwebpack_5_react||[]).push([[798],{798:(e,t,n)=>{n.r(t),n.d(t,{default:()=>c});var a=n(294),r=n(250);function c(){var e=(0,r.s0)();return a.createElement(a.Fragment,null,a.createElement("div",null,a.createElement("button",{onClick:function(){return e("/")}},"to Main Page")))}}}]);
+//# sourceMappingURL=798.bundle.js.map
