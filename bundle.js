@@ -4248,6 +4248,11 @@ function App() {
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Suspense, {
       fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, "loading..")
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(DefaultPage, null))
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, {
+    path: "*",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, " Not Found or You do not have permission.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+      to: '/'
+    }, "to '/'"))
   }))));
 }
 
