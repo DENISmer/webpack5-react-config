@@ -44,7 +44,66 @@ npm i -D webpack webpack-cli
 ```
 ### 2 In the root of the project we create:
 
-```
+```js
 ./src // folder
 ./webpack.config.js //config webpack file
 ```
+### 3 Beginning to setup webpack
+
+  ####   3.1 create file: ./src/index.js with simple code:
+
+```js
+const sayHello = () => console.log('hello');
+sayHello();
+```
+  ####   3.2 webpack.config.js:
+
+```javascript
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js', // entry point of project
+  
+  output: {
+    path: path.resolve(__dirname, 'build'), // directory for bundle
+    clean: true, // clean ./build directory
+  },
+}
+```
+
+  ####   3.3 webpack dev-server settings:
+
+```javascript
+npm i -D webpack-dev-server
+```
+
+  ####   3.4 add to webpack.config.js dev-server settings in "module.exports":
+
+```javascript
+devtool: 'source-map',
+
+devServer: {
+  hot: true, //automatic page reload when changes are made
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
