@@ -36,8 +36,15 @@ Delete `dist` folder.
 
 # how to setup this webpack configuration
 
-## 1 installing
+### 1 Installing webpack
 
 ```
 npm init -y
+npm i -D webpack webpack-cli
+```
+### 2 In the root of the project we create:
+
+```
+./src // folder
+./webpack.config.js //config webpack file
 ```
