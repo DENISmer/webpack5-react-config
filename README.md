@@ -33,3 +33,11 @@ Builds the app for production to the `build` folder.
 ### `npm run clean`
 
 Delete `dist` folder.
+
+#how to setup this webpack configuration
+
+##1 installing
+
+```
+npm init -y
+```
