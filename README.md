@@ -34,9 +34,9 @@ Builds the app for production to the `build` folder.
 
 Delete `dist` folder.
 
-#how to setup this webpack configuration
+# how to setup this webpack configuration
 
-##1 installing
+## 1 installing
 
 ```
 npm init -y
