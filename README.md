@@ -32,7 +32,7 @@ Builds the app for production to the `build` folder.
 
 ### `npm run clean`
 
-Delete `dist` folder.
+Delete `build` folder.
 
 # how to setup this webpack configuration
 
@@ -319,7 +319,7 @@ module.exports = {
    +        "start": "cross-env SERVE=true webpack serve",
             "build": "webpack",
             "build-prod": "webpack --mode=production",
-            "clean": "rd /s /q dist"
+            "clean": "rd /s /q build"
         }
         // ...
     }
