@@ -1,3 +1,10 @@
+#### Navigation
+##### [1 installing webpack](#title1)
+##### [2 Prepare to setup](#title2)
+##### [3 Setup](#title3)
+##### [4 Preparing webpack to React](#title4)
+##### [5 Deploy on gh pages](#title5)
+
 # Webpack 5 config for React
 
 A detailed guide for setting up this config you can find article about this config on Habr: https://habr.com/ru/post/597389/
@@ -36,19 +43,19 @@ Delete `build` folder.
 
 # how to setup this webpack configuration
 
-### 1 Installing webpack
+### <a id="title1">1 Installing webpack</a>
 
 ```
 npm init -y
 npm i -D webpack webpack-cli
 ```
-### 2 In the root of the project we create:
+### <a id="title2">2 In the root of the project we create:</a>
 
 ```js
 ./src // folder
 ./webpack.config.js //config webpack file
 ```
-### 3 Beginning to setup webpack
+### <a id="title3">3 Beginning to setup webpack</a>
 
   ####   3.1 create file: ./src/index.js with simple code:
 
@@ -338,13 +345,17 @@ module.exports = {
     };
   ```
 
+### <a id="title5">5 Deploy on gh pages</a>
 
+  ```javascript
+    npm install gh-pages --save-dev
+  ```
 
+ #### 4.2 Update scripts at _package.json_:
 
-
-
-
-
+  ```javascript
+    "deploy" : "gh-pages -d build",
+  ```
 
 
 
