@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://denismer.github.io/webpack5-react-config/",
   "scripts": {
     "start": "cross-env SERVE=true webpack serve",
     "build": "webpack",
     "build-prod": "webpack --mode=production",
+    "local-deploy": "npx serve -s build",
     "deploy": "gh-pages -d build",
     "clean": "rd /s /q build",
     "cb-dep": "npm run clean && npm run build-prod && npm run deploy"
@@ -25,7 +27,6 @@
   "bugs": {
     "url": "https://github.com/aAleksandrOrlov/webpack-5-config/issues"
   },
-  "homepage": "https://github.com/aAleksandrOrlov/webpack-5-config#readme",
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
