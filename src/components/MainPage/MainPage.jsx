@@ -1,7 +1,7 @@
 import MainPageStyle from './MainPage.module.scss'
 import {useNavigate} from "react-router-dom";
 import React from "react";
-export default function MainPage(){
+export function MainPage(){
     const navigate = useNavigate()
     return(<>
         <section>

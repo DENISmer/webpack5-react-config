@@ -30,7 +30,8 @@ module.exports = {
   devtool: 'source-map',
   entry: './src/index.js',
   devServer: {
-    static: './dist',
+    historyApiFallback: true,
+    static: './build',
     hot: true,
   },
 
@@ -39,6 +40,7 @@ module.exports = {
     filename: "bundle.js",
     assetModuleFilename: 'assets/[hash][ext][query]',
     clean: true,
+    publicPath: '/'
   },
   module: {
     rules: [
